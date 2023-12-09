@@ -1,8 +1,9 @@
 /* Character Card styling */
 .character-card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     width: 250px;
     background-color: #fff;
@@ -10,6 +11,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
+    gap: 20px;
   }
   
   .character-card img {
@@ -25,6 +27,13 @@
   
   .character-card p {
     margin: 5px 0;
+  }
+  .btn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 60px;
+
   }
   
   .character-card button {
