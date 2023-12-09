@@ -5,8 +5,8 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="banner-content">
-        <h1>Welcome to Our Website</h1>
-        <p>Explore our amazing services!</p>
+        <h2>Welcome to Our Website</h2>
+        <h1>Rick and Morty Characters</h1>
       </div>
     </div>
   );
