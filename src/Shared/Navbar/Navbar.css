@@ -1,7 +1,12 @@
-
-  .navbar {
-    background-color: #333;
-    color: white;
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+.navbar {
+    background-color: #ede7e7;
+    color: rgb(11, 9, 9);
+    
   }
   
   .container {
@@ -33,7 +38,7 @@
   
   .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(38, 35, 35);
   }
   
   .nav-links a:hover {
