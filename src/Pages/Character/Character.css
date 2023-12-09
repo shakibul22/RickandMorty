@@ -1,0 +1,72 @@
+/* Character Card styling */
+.character-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .character-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .character-card h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .character-card p {
+    margin: 5px 0;
+  }
+  
+  .character-card button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .character-card button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Layout for the components */
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .favorites, .shared-episodes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .favorite-card, .shared-card {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .favorite-card img, .shared-card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  

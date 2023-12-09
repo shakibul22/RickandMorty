@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import './Character.css'; // Import your CSS file
+
 
 const Character = () => {
     const [characters, setCharacters] = useState([]);
@@ -52,12 +54,12 @@ const Character = () => {
                 {favorites.some(fav => fav.id === character.id) ? 'Unmark Favorite' : 'Mark Favorite'}
               </button>
               <button onClick={() => handleFavoriteClick(character)}>
-                Show Shared Characters
+                view Details
               </button>
             </div>
           ))}
         </div>
-        <div className="favorites">
+        {/* <div className="favorites">
           <h1>Favorite Characters</h1>
           {favorites.map(favorite => (
             <div key={favorite.id} className="favorite-card">
@@ -76,7 +78,7 @@ const Character = () => {
               <p>Status: {shared.status}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     );
 };
