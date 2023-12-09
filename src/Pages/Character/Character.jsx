@@ -8,6 +8,7 @@ const Character = () => {
   const [characters, setCharacters] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [sharedEpisodes, setSharedEpisodes] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch('https://rickandmortyapi.com/api/character')
@@ -28,6 +29,9 @@ const Character = () => {
     } else {
       const updatedFavorites = [...favorites, character];
       setFavorites(updatedFavorites);
+
+      // Add the selected character to the cart
+      setCart([...cart, { id: character.id, name: character.name }]);
     }
   };
 
@@ -77,6 +81,18 @@ const Character = () => {
           </div>
         ))}
       </div>
+
+      {/* Display the cart content */}
+  <div>
+        <div className="cart">
+        <h3>Cart</h3>
+        <ul>
+          {cart.map(item => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+        </ul>
+      </div>
+  </div>
     </div>
   );
 };
