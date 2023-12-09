@@ -84,14 +84,14 @@ const Character = () => {
 
       {/* Display the cart content */}
   <div>
-        <div className="cart">
-        <h3>Cart</h3>
-        <ul>
-          {cart.map(item => (
-            <li key={item.id}>{item.name}</li>
-          ))}
-        </ul>
-      </div>
+  <div className="cart-container">
+      <h2>Favourite Character</h2>
+      <ul>
+        {cart.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
+    </div>
   </div>
     </div>
   );
