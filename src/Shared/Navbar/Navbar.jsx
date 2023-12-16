@@ -4,7 +4,7 @@ import './Navbar.css'; // Import your CSS file
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="container">
           <h1 className="logo">RickyMorty</h1>
           <ul className="nav-links">
@@ -14,7 +14,7 @@ const Navbar = () => {
             <li><a href="/favourite">Favourite</a></li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };
